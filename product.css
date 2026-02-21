@@ -1,0 +1,476 @@
+/* main card – amazon clean, white background, subtle border */
+
+.grid-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.product-card {
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow:
+    0 10px 30px 0 rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 2.5rem 2.2rem;
+  border: 1px solid #f0f2f2;
+  margin-top: 20px;
+}
+
+/* classic amazon 2‑col + right col deals */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* LEFT COL – image area */
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.main-image {
+  background: #f7f9fc;
+  border-radius: 20px;
+  border: 1px solid #2b2b2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  min-height: 350px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.01);
+  transition: all 300ms ease;
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+}
+
+.main-image svg {
+  max-width: 90%;
+  height: auto;
+  filter: drop-shadow(0 6px 8px rgba(0, 40, 70, 0.1));
+}
+
+.thumbnail-strip {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.thumb {
+  width: 62px;
+  height: 62px;
+  background: #f2f6fa;
+  border-radius: 12px;
+  border: 1px solid #dae1e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  transition: 0.1s;
+}
+
+.thumb svg {
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+.thumb:hover {
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa;
+}
+
+.barcode-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.barcode-img p {
+  font-size: 1.5rem;
+}
+
+/* RIGHT COL – product info */
+.info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title-row h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #0f1111;
+  margin-bottom: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.brand-line {
+  font-size: 0.9rem;
+  color: #565959;
+}
+
+.brand-line span {
+  font-size: 1.4rem;
+}
+
+.brand-line a {
+  color: #007185;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.brand-line a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+/* rating & reviews */
+.rating-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0 0.2rem;
+  border-bottom: 1px solid #e3e6e9;
+  padding-bottom: 0.9rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  color: #ffa41c;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+/* .stars span {
+  font-size: 2rem;
+} */
+
+/* .stars span.half {
+  position: relative;
+  display: inline-block;
+  width: 0.9rem;
+  overflow: hidden;
+  color: #ffa41c;
+} */
+
+.review-count {
+  color: #007185;
+  font-size: 1.3rem;
+  border-right: 1px solid #b6bfc9;
+  padding-right: 1rem;
+  margin-right: 0.25rem;
+  font-weight: 400;
+}
+
+.review-count:hover {
+  color: #c7511f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.total-reviews a {
+  font-size: 1.3rem;
+}
+
+/* .answer-tag {
+  color: #565959;
+  font-size: 0.9rem;
+} */
+
+/* price box (amazon staple) */
+.price-box {
+  background: #f7f8fa;
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #e3e9f0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 2rem;
+}
+
+.price-large {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0f1111;
+}
+
+.price-large sup {
+  font-size: 1rem;
+  top: -0.4rem;
+}
+
+.deal-badge {
+  background: #cc0c39;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  border-radius: 30px;
+  letter-spacing: 0.3px;
+}
+
+.moq-tag {
+  font-size: 0.95rem;
+  background: #edf2f7;
+  padding: 0.3rem 1.2rem;
+  border-radius: 50px;
+  color: #2a4b6e;
+  border: 1px dashed #8fa6c0;
+}
+
+.product-action-buttons .add-to-cart-btn {
+  flex: 1;
+  padding: 12px;
+  background: #f0a122d0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-action-buttons .wishlist-btn {
+  flex: 1;
+  padding: 12px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* description */
+.desc-section {
+  line-height: 1.5;
+  color: #2e3c4b;
+  background: #ffffff;
+  border-left: 4px solid #c7e0f0;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.desc-section p strong {
+    font-size: 1.3rem;
+}
+.desc-section p {
+  margin-bottom: 0.4rem;
+   font-size: 1rem;
+}
+
+/* bullet features */
+.feature-bullets {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  margin-top: 0.2rem;
+}
+
+.feature-bullets li {
+  background: #ecf3f8;
+  padding: 0.2rem 1rem;
+  border-radius: 40px;
+  font-size: 1.14rem;
+  color: #235c89;
+  border: 1px solid #d2e2f0;
+}
+
+/* product info grid (sku, stock, warranty, min order) */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.spec-item {
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #e6ecf2;
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #5d798e;
+  margin-bottom: 0.2rem;
+}
+
+.spec-value {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1f3c5c;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stock-badge {
+  background: #067d62;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.9rem;
+  border-radius: 40px;
+  text-transform: uppercase;
+}
+
+.warranty-chip {
+  background: #e1eaf1;
+  border-radius: 30px;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+}
+
+/* shipping card (amazon style) */
+.shipping-info {
+  background: #f1f6fa;
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  margin: 0.8rem 0 0.2rem;
+  border-left: 4px solid #8bb9da;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shipping-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.shipping-icon {
+  font-size: 1.8rem;
+}
+
+.shipping-text {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #1a425c;
+}
+
+.shipping-text strong {
+  font-weight: 700;
+  color: #0f293f;
+   font-size: 1.3rem;
+}
+
+.shipping-text span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.shipping-badge {
+  background: #c7e0f0;
+  border-radius: 50px;
+  padding: 0.3rem 1.2rem;
+  font-size: 0.9rem;
+  color: #1b4666;
+  font-weight: 500;
+}
+
+/* extra micro row with SKU reminder and warranty info */
+.meta-micro ul {
+  display: flex;
+  gap: 1.8rem;
+  font-size: 0.85rem;
+  color: #4d6a82;
+  background: #f2f6fc;
+  padding: 0.7rem 1.2rem;
+  border-radius: 40px;
+  margin-top: 0.5rem;
+  border: 1px solid #dde5ef;
+  flex-wrap: wrap;
+}
+
+.meta-micro li {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* no header or footer, just product region */
+hr {
+  display: none;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.stock-badge.in-stock {
+  background: #e6f4e6;
+  color: #2e7d32;
+}
+
+.stock-badge.low-stock {
+  background: #fff3e0;
+  color: #ed6c02;
+}
+
+.stock-badge.out-of-stock {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 1000px) {
+  .amazon-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-card {
+    padding: 1.8rem;
+  }
+}
+@media (max-width: 550px) {
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+  .shipping-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+}

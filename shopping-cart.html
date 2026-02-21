@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shopping Cart | AmaZone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header id="header"></header>
+
+      <!-- Main Content -->
+      <div class="container">
+        <h1 class="page-title">Your Shopping Cart</h1>
+
+        <div class="cart-container">
+          <!-- Cart Items Section -->
+          <section class="cart-items"></section>
+
+          <!-- Order Summary Section -->
+          <section class="cart-summary">
+            <h2 class="summary-title">Order Summary</h2>
+
+            <div class="summary-row">
+              <span class="total-in-cart">Subtotal (3 items)</span>
+              <span class="subtotal">$599.97</span>
+            </div>
+
+            <div class="summary-row shipping">
+              <span>Shipping</span>
+              <span>$9.99</span>
+            </div>
+
+            <div class="summary-row">
+              <span>Tax</span>
+              <span class="tax">$48.00</span>
+            </div>
+
+            <div class="summary-row discount">
+              <span>Discount</span>
+              <span style="color: #27ae60">-$30.00</span>
+            </div>
+
+            <div class="summary-total summary-row">
+              <span>Total</span>
+              <span>$627.96</span>
+            </div>
+
+            <a href="#" class="checkout-btn">Proceed to Checkout</a>
+            <a href="index.html" class="continue-shopping">Continue Shopping</a>
+          </section>
+        </div>
+
+        <!-- Empty Cart State (Hidden by default) -->
+        <div class="cart-items empty-cart" style="display: none">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Your cart is empty</h3>
+          <p>
+            Looks like you haven't added any items to your cart yet. Start
+            shopping to fill it up!
+          </p>
+          <a
+            href="#"
+            class="checkout-btn"
+            style="max-width: 250px; margin: 0 auto"
+            >Start Shopping</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <!-- <script src="script.js"></script> -->
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

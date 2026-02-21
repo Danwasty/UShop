@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wishlist | AmaZone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="wishlist.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header id="header"></header>
+
+      <!-- Main Content -->
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">My Wishlist</h1>
+            <p class="wishlist-count">4 items saved for later</p>
+          </div>
+          <div class="wishlist-actions">
+            <button class="action-btn share">
+              <i class="fas fa-share-alt"></i> Share List
+            </button>
+            <button class="action-btn delete-all">
+              <i class="fas fa-trash-alt"></i> Clear All
+            </button>
+          </div>
+        </div>
+
+        <!-- Wishlist Items Grid -->
+        <div class="wishlist-grid"></div>
+
+        <!-- Recently Viewed Section -->
+        <div class="recently-viewed">
+          <h2 class="section-title">Recently Viewed</h2>
+          <div class="products-grid"></div>
+        </div>
+
+        <!-- Empty Wishlist State (Hidden by default) -->
+        <div class="empty-wishlist" style="display: none">
+          <i class="fas fa-heart-broken"></i>
+          <h3>Your wishlist is empty</h3>
+          <p>
+            You haven't added any items to your wishlist yet. Start exploring
+            our products and save items you love for later!
+          </p>
+          <a href="#" class="browse-btn">Browse Products</a>
+        </div>
+      </div>
+
+      <!-- Cart Notification -->
+      <div class="cart-notification" id="cartNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Item added to cart successfully!</span>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <!-- <script src="script.js"></script> -->
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

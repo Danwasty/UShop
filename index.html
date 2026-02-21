@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmaZone - Premium Online Shopping</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="wishlist.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header id="header" class="header"></header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>Premium Products at Amazing Prices</h1>
+          <p>
+            Discover millions of products with fast delivery and excellent
+            customer service. Shop now for the best deals!
+          </p>
+          <a href="#products" class="btn btn-primary hero-btn"
+            >Start Shopping</a
+          >
+        </div>
+      </section>
+
+      <div class="container shop-by-category">
+        <h1>Shop By Category</h1>
+        <p>
+          Explore our wide range of products organized by category to find
+          exactly what you're looking for
+        </p>
+        <div class="category-wrapper">
+          <div class="category-track"></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container main-content">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar">
+          <h2>Filters</h2>
+
+          <div class="filter-section">
+            <h3>Categories</h3>
+            <div class="filter-options category"></div>
+          </div>
+
+          <div class="filter-section">
+            <h3>Price Range</h3>
+            <div class="price-range">
+              <input
+                type="number"
+                placeholder="Min"
+                value="0"
+                id="min"
+                min="0"
+              />
+              <span>to</span>
+              <input
+                type="number"
+                placeholder="Max"
+                value="100000"
+                id="max"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h3>Customer Rating</h3>
+            <div class="filter-options rating-options">
+              <div class="filter-option">
+                <input type="radio" id="rating-4" name="rating" value="4" />
+                <label for="rating-4">4★ & above</label>
+              </div>
+
+              <div class="filter-option">
+                <input type="radio" id="rating-3" name="rating" value="3" />
+                <label for="rating-3">3★ & above</label>
+              </div>
+
+              <div class="filter-option">
+                <input type="radio" id="rating-2" name="rating" value="2" />
+                <label for="rating-2">2★ & above</label>
+              </div>
+
+              <div class="filter-option">
+                <input type="radio" id="rating-1" name="rating" value="1" />
+                <label for="rating-1">1★ & below</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h3>Brand</h3>
+            <div class="filter-options brand"></div>
+          </div>
+
+          <button class="btn btn-block">Apply Filters</button>
+        </aside>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+          <div class="products-header">
+            <h2>Recommended Products</h2>
+            <div class="sort-options">
+              <span>Sort by:</span>
+              <select>
+                <option>Relevance</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Customer Rating</option>
+                <option>Newest Arrivals</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid" id="products-grid"></div>
+          <div class="pagination">
+            <i class="fa-solid fa-angles-left" id="first-pg-btn"></i>
+            <i class="fa-solid fa-chevron-left" id="prev-btn"></i>
+            <span id="pageNumber"></span>
+            <i class="fa-solid fa-chevron-right" id="next-btn"></i>
+            <i class="fa-solid fa-angles-right" id="last-pg-btn"></i>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <!-- Recently Viewed Section -->
+        <div class="recently-viewed">
+          <h2 class="section-title">Recently Viewed</h2>
+          <div class="products-grid"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Recently Viewed Section -->
+        <div class="suggested-products">
+          <h2 class="section-title">Suggested products</h2>
+          <div class="products-grid">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="grid"></div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

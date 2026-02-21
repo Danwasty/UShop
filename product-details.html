@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Detail</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header"></header>
+
+      <div class="grid-container">
+        <div class="product-card">
+          <div class="card-grid">
+            <!-- LEFT column: images -->
+            <div class="image-stack">
+              <div class="main-image">
+                <svg
+                  viewBox="0 0 280 240"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="30"
+                    y="30"
+                    width="200"
+                    height="160"
+                    rx="20"
+                    fill="#EFF6FC"
+                    stroke="#AAC7DF"
+                    stroke-width="2"
+                  />
+                  <rect
+                    x="60"
+                    y="60"
+                    width="140"
+                    height="100"
+                    rx="10"
+                    fill="white"
+                    stroke="#7DA5C4"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="140"
+                    cy="110"
+                    r="30"
+                    fill="#D9E6F2"
+                    stroke="#3679B5"
+                    stroke-width="2"
+                    stroke-dasharray="3 3"
+                  />
+                  <path
+                    d="M80 190 L200 190"
+                    stroke="#7FA5C2"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="90" cy="190" r="6" fill="#2C5779" />
+                  <circle cx="190" cy="190" r="6" fill="#2C5779" />
+                  <text
+                    x="130"
+                    y="190"
+                    fill="#2C5779"
+                    font-size="12"
+                    font-family="Arial"
+                    font-weight="bold"
+                  >
+                    HARMoNY
+                  </text>
+                </svg>
+              </div>
+              <div class="thumbnail-strip">
+                <div class="thumb">
+                  <svg viewBox="0 0 60 50" fill="none">
+                    <rect x="5" y="5" width="40" height="30" fill="#E1EDFA" />
+                  </svg>
+                </div>
+                <div class="thumb">
+                  <svg viewBox="0 0 60 50" fill="none">
+                    <circle cx="25" cy="20" r="15" fill="#E1EDFA" />
+                  </svg>
+                </div>
+                <div class="thumb">
+                  <svg viewBox="0 0 60 50" fill="none">
+                    <path d="M10 15 L40 15 L35 35 L15 35Z" fill="#E1EDFA" />
+                  </svg>
+                </div>
+                <div class="thumb">
+                  <svg viewBox="0 0 60 50" fill="none">
+                    <rect
+                      x="15"
+                      y="10"
+                      width="20"
+                      height="25"
+                      rx="4"
+                      fill="#E1EDFA"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="barcode-img">
+                
+              </div>
+            </div>
+
+            <!-- RIGHT column: all product info -->
+            <div class="info-col">
+              <!-- title, brand -->
+              <div class="title-row">
+                <h1>Harmony Wave AX · Studio Monitor (Pair)</h1>
+                <div class="brand-line">
+                  <span>Brand: </span><a href="#">Aether Audio</a>
+                  <span style="margin: 0 1rem">|</span>
+                  <span class="moq-tag">Minimum order: 2 units</span>
+                </div>
+              </div>
+
+              <!-- reviews (amazon style) -->
+              <div class="rating-row">
+                <div class="stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span style="color: #d5d9e2">★</span>
+                </div>
+                <span class="review-count">4,281 ratings</span>
+                <span class="total-reviews">124 answered questions</span>
+              </div>
+
+              <!-- price & moq again (clean) -->
+              <div class="price-box">
+                <span class="price-large"><sup>$</sup>329<sup>00</sup></span>
+                <span class="deal-badge">limited time</span>
+                <span class="original-price">📦 MOQ: 2 pcs</span>
+              </div>
+
+              <!-- Add after the price-box div -->
+              <div
+                class="product-action-buttons"
+                style="margin-top: 20px; display: flex; gap: 10px"
+              >
+                <button class="btn add-to-cart-btn">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <button class="btn wishlist-btn">
+                  <i class="fas fa-heart"></i> Add to Wishlist
+                </button>
+              </div>
+              <!-- description (short) -->
+              <div class="desc-section">
+                <p>
+                  <strong>Description</strong>
+                </p>
+              </div>
+
+              <!-- feature bullets -->
+              <ul class="feature-bullets"></ul>
+
+              <!-- product information grid: SKU, STOCK, WARRANTY, MINIMUM ORDER -->
+              <div class="spec-grid">
+                <!-- sku -->
+                <div class="spec-item">
+                  <span class="spec-label">SKU</span>
+                  <span class="spec-value">AA‑HS7‑BLK</span>
+                </div>
+                <!-- stock (with badge) -->
+                <div class="spec-item">
+                  <span class="spec-label">STOCK</span>
+                  <div class="spec-value">
+                    87 units <span class="stock-badge">in stock</span>
+                  </div>
+                </div>
+                <!-- warranty (full) -->
+                <div class="spec-item">
+                  <span class="spec-label">WARRANTY</span>
+                  <div class="spec-value">
+                    <span class="warranty-chip">🔒 3 years limited</span>
+                  </div>
+                </div>
+                <!-- minimum order quantity (explicit) -->
+                <div class="spec-item">
+                  <span class="spec-label">MIN. ORDER</span>
+                  <div class="spec-value">
+                    2 units
+                    <span
+                      style="
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        margin-left: 6px;
+                      "
+                      >(bulk disc.)</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- SHIPPING INFORMATION (large block) -->
+              <div class="shipping-info">
+                <div class="shipping-left">
+                  <span class="shipping-icon">📦🚚</span>
+                  <span class="shipping-text">
+                    <strong>FREE express shipping</strong> · 2–4 business
+                    days.<br />
+                    <span style="font-size: 0.9rem"
+                      >International shipping $12–$18 (5–9 days)</span
+                    >
+                  </span>
+                </div>
+                <span class="shipping-badge">tracked & insured</span>
+              </div>
+
+              <div class="meta-micro"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
